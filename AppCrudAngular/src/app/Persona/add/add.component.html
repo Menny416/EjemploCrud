@@ -1,1 +1,35 @@
-<p>add works!</p>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4>Alta de Areas</h4> 
+        </div>  
+        <div class="card-body">   
+            <div class="panel-body">
+                <form method="POST" id="frmJob" (ngSubmit)="submit(frmJob)" #frmJob="ngForm" ngNativeValidate>
+                    <input type="hidden" id="esActivo" name="esActivo" [(ngModel)]="area.esActivo">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="cmbTema">Nombre de Area</label>
+                                <input type="text" class="form-control" id="area" name="area" [(ngModel)]="area.area" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cmbTema">Estatus</label>
+                                <br>
+                                <ui-switch checked color="#fe9900" disabled [checked]="area.esActivo"></ui-switch>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary pull-right">
+                                <i class="fa fa-save"></i> Guardar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -8,8 +8,8 @@
 </div> -->
 
 <div class="container">
-  <button (click)="Listar()" class="btn btn-info">Listar</button>
-  <button (click)="Nuevo()" class="btn btn-info" style="margin-left:10px">Nuevo</button>
+  <button [routerLink]="[ 'Listar' ]" class="btn btn-info">Listar</button>
+  <button [routerLink]="[ 'Agregar' ]" class="btn btn-info" style="margin-left:10px">Nuevo</button>
 </div>
 <hr>
 <router-outlet></router-outlet>

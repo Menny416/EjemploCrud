@@ -7,8 +7,11 @@ import { ListarComponent } from './Persona/listar/listar.component';
 import { AddComponent } from './Persona/add/add.component';
 import { EditComponent } from './Persona/edit/edit.component';
 import {ServiceService} from '../app/Service/service.service'
-import {FormsModule} from '@angular/forms'
-import {HttpClientModule} from '@angular/common/http'
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {UiSwitchModule} from 'ngx-ui-switch';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    UiSwitchModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

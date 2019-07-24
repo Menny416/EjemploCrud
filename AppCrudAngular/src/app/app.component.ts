@@ -9,19 +9,19 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'AppCrudAngular';
 
-  constructor (private router:Router){}
+  // constructor (private router:Router){}
 
-  Listar(){
-    this.router.navigate(["Listar"])
+  // Listar(){
+  //   this.router.navigate(["Listar"])
 
-  }
-  editar(){
-    this.router.navigate(["edit"])
+  // }
+  // editar(){
+  //   this.router.navigate(["Modificar"])
 
-  }
-  Nuevo(){
-    this.router.navigate(["add"])
+  // }
+  // Nuevo(){
+  //   this.router.navigate(["Agregar"])
 
-  }
+  // }
 
 }
